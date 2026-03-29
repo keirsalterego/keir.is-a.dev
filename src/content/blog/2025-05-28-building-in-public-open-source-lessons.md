@@ -374,7 +374,7 @@ With this solid foundation in community engagement, June will focus on:
 
 ## Final Thoughts
 
-Open source isn't just about code—it's about people. The technical skills you gain are valuable, but the communication skills, collaboration patterns, and relationships you build are invaluable.
+Open source isn't just about code-it's about people. The technical skills you gain are valuable, but the communication skills, collaboration patterns, and relationships you build are invaluable.
 
 If you're not contributing to open source yet, start today. Find a project you use, read the code, and look for something you can improve. Your first PR might be scary, but I promise: the community wants you to succeed.
 

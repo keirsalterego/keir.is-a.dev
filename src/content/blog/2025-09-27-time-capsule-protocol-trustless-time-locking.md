@@ -7,7 +7,7 @@ tags: ["Solana", "Smart Contracts", "Cryptography", "Web3", "Anchor"]
 
 ## Introduction
 
-September 2025 was all about pushing the boundaries of what's possible with smart contracts. I built **Time Capsule Protocol**—a system that lets you encrypt messages that automatically unlock at a specific future time, without any trusted intermediaries. It's like a digital time capsule, secured by cryptography and blockchain consensus.
+September 2025 was all about pushing the boundaries of what's possible with smart contracts. I built **Time Capsule Protocol**-a system that lets you encrypt messages that automatically unlock at a specific future time, without any trusted intermediaries. It's like a digital time capsule, secured by cryptography and blockchain consensus.
 
 ## The Vision
 

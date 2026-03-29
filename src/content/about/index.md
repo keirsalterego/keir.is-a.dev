@@ -3,7 +3,7 @@ name: Manish.
 subname: keirsalterego
 avatarFront: /img/me.jpg
 avatarBack: /img/avatar.jpg
-tltr: Engineering high-performance protocols and decentralized infrastructure.
+tltr: I build the infrastructure that others build on, low-level systems, Rust backends, Solana infra, and protocol design. I care about correctness, performance, and the machines underneath.
 socials:
   - icon: i-academicons:cv
     link: /files/cv/cv.pdf
@@ -20,15 +20,15 @@ socials:
 
 ## $ nvim bio.txt
 
-I’m a B.Tech student in [Computer Science and Engineering](https://silicon.ac.in/bbsr-home/b-tech-computer-science-engineering/) at [Silicon University](https://silicon.ac.in/), moving beyond the application layer to engineer the machinery that powers the decentralized web.
+I build the infrastructure that others build on: low-level systems, Rust backends, Solana infra, and protocol design.
 
-While most developers focus on writing smart contracts, I focus on what runs them. My passion lies in **Core Protocol Engineering** and **Systems Programming** using **Rust**. I am currently researching the **Solana Runtime (SVM)**, validator architecture, and high-performance network infrastructure.
+I work closest to the machine layer where correctness, performance, and reliability are non-negotiable. Most of my focus is on systems engineering problems like runtime behavior, backend performance paths, and protocol-grade architecture decisions.
 
-Instead of building UI/UX, I am obsessed with low-level optimizations, memory safety, and the consensus mechanisms that make blockchains scalable. My goal is to work on the "metal" of Web3—contributing to open-source validator clients and optimizing transaction processing at the system level.
+Current focus: **Systems Engineering**, **Rust Backend Engineering**, and **Solana Protocol Engineering**.
 
-Check out my [repositories](/projects) where I explore systems-level challenges and Rust performance.
+Check out my [projects](/projects) and [journal](/journal) for build logs, experiments, and infra notes.
 
-Always compiling, always optimizing.
+Always compiling. Always optimizing.
 
 ## Miscellaneous
 

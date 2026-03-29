@@ -41,12 +41,10 @@ const { frontmatter } = Astro.props;
   .journal-article__card {
     position: relative;
     padding: 1.7rem;
-    border-radius: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    background: #0a0c12;
-    box-shadow:
-      inset 8px 8px 16px rgba(0, 0, 0, 0.58),
-      inset -8px -8px 16px rgba(255, 255, 255, 0.05);
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
   }
 
   .journal-article__card::before {
@@ -67,7 +65,7 @@ const { frontmatter } = Astro.props;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     font-size: 0.8rem;
-    color: #8aa5ff;
+    color: #928374;
     margin: 0 0 0.35rem 0;
   }
 
@@ -79,18 +77,18 @@ const { frontmatter } = Astro.props;
 
   .journal-article__header time {
     display: block;
-    color: #9da7c2;
+    color: #7c6f64;
     margin-top: 0.35rem;
   }
 
   .lede {
     margin: 0.7rem 0 0;
-    color: #c5cbe3;
+    color: #bdae93;
     max-width: 48ch;
   }
 
   .journal-article__body {
-    color: #e8ebf7;
+    color: #ebdbb2;
     padding: 0;
     background: transparent;
     border: none;
@@ -99,13 +97,13 @@ const { frontmatter } = Astro.props;
   }
 
   :global(.journal-article__body a) {
-    color: #9fb5ff;
+    color: #a89984;
     text-decoration: underline;
     text-decoration-thickness: 2px;
   }
 
   :global(.journal-article__body a:hover) {
-    color: #c6d3ff;
+    color: #d8c6a3;
   }
 
   @media (max-width: 720px) {

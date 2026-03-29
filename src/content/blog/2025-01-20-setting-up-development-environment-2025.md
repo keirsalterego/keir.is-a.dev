@@ -7,7 +7,7 @@ tags: ["Developer Tools", "Productivity", "Setup", "Workflow"]
 
 ## Introduction
 
-Starting 2025 with a fresh development environment setup. After years of accumulating tools and configs, I decided to document everything in one place—both for my future self and anyone looking to optimize their workflow. This is the foundation I'm building on for the year ahead.
+Starting 2025 with a fresh development environment setup. After years of accumulating tools and configs, I decided to document everything in one place-both for my future self and anyone looking to optimize their workflow. This is the foundation I'm building on for the year ahead.
 
 ## Hardware
 

@@ -3,7 +3,7 @@ import { useDark } from "solidjs-use";
 
 export const OhVueIcons: Component = () => {
   const [isDark] = useDark();
-  const color = () => (isDark() ? "#ff6562" : "#e1190e");
+  const color = () => (isDark() ? "#d5c4a1" : "#bdae93");
 
   return (
     <svg

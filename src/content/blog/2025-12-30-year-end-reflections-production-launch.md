@@ -696,7 +696,7 @@ Sharing the journey created opportunities I never expected.
 
 The key was consistency: showing up every day, building in public, learning from failures, and celebrating small wins.
 
-To everyone who used my projects, gave feedback, or followed along—thank you. You made this journey meaningful.
+To everyone who used my projects, gave feedback, or followed along-thank you. You made this journey meaningful.
 
 Here's to 2026. Let's build something amazing.
 

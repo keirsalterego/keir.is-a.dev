@@ -67,8 +67,8 @@ html.dark .prose div[class*="language-"] code span {
 }
 
 .prose div[class*="language-"]::before {
-  @apply content-[""] absolute w-2.5 h-2.5 top-3.5 left-4 rounded-full bg-[#fd5f57];
-  box-shadow: 16px 0 0 0 #febb2f, 32px 0 0 0 #2ec841;
+  @apply content-[""] absolute w-2.5 h-2.5 top-3.5 left-4 rounded-full bg-[#7c6f64];
+  box-shadow: 16px 0 0 0 #928374, 32px 0 0 0 #a89984;
 }
 
 .prose div[class*="language-"] > span.lang {

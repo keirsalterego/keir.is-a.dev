@@ -8,7 +8,7 @@ export const Navbar: Component<{
   return (
     <header
       class="z-50 fixed left-1/2 top-4 -translate-x-1/2 w-auto min-w-fit max-w-xl h-11 flex items-center justify-center rounded-lg font-ui px-2 md:px-4"
-      style={{ transition: "box-shadow 0.2s, background 0.2s" }}
+      style={{ transition: "background 0.2s" }}
     >
       {/* Left: Logo */}
       <div class="flex items-center min-w-0">
@@ -80,21 +80,21 @@ export const Navbar: Component<{
         }
         .nav-btn:hover {
           background: rgba(255, 255, 255, 0.08);
-          color: #e8ecff;
+          color: #ebdbb2;
         }
         .nav-btn-active {
           background: rgba(255, 255, 255, 0.12);
-          color: #ffffff;
+          color: #fbf1c7;
           border-radius: 6px;
         }
         @media (prefers-color-scheme: dark) {
           .nav-btn:hover {
             background: rgba(255, 255, 255, 0.08);
-            color: #e8ecff;
+            color: #ebdbb2;
           }
           .nav-btn-active {
             background: rgba(255, 255, 255, 0.12);
-            color: #ffffff;
+            color: #fbf1c7;
             border-radius: 6px;
           }
         }

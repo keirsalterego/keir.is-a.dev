@@ -40,25 +40,25 @@ export default defineConfig({
           --bg: 0 0% 100%;
           --bg-dark: 0 0% 92%;
           --border: 0 0% 85%;
-          --primary: 210 80% 45%;
-          --info: ${theme.colors.blue[600]};
-          --success: ${theme.colors.green[700]};
-          --warning: ${theme.colors.amber[600]};
-          --danger: ${theme.colors.red[600]};
+          --primary: 220 22% 52%;
+          --info: ${theme.colors.slate[500]};
+          --success: ${theme.colors.slate[400]};
+          --warning: ${theme.colors.gray[500]};
+          --danger: ${theme.colors.zinc[400]};
         }
 
         .dark {
-          --fg: 0 0% 85%;
-          --fg-light: 0 0% 75%;
-          --fg-dark: 0 0% 100%;
-          --bg: 0 0% 17%;
-          --bg-dark: 0 0% 25%;
-          --border: 0 0% 35%;
-          --primary: 210 70% 63%;
-          --info: ${theme.colors.sky[500]};
-          --success: ${theme.colors.green[500]};
-          --warning: ${theme.colors.amber[500]};
-          --danger: ${theme.colors.red[500]};
+          --fg: 43 47% 81%;
+          --fg-light: 29 15% 57%;
+          --fg-dark: 46 92% 86%;
+          --bg: 190 6% 12%;
+          --bg-dark: 0 0% 16%;
+          --border: 26 7% 30%;
+          --primary: 37 35% 72%;
+          --info: ${theme.colors.stone[400]};
+          --success: ${theme.colors.stone[400]};
+          --warning: ${theme.colors.stone[500]};
+          --danger: ${theme.colors.neutral[500]};
         }
 
         * {

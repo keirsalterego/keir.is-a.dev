@@ -5,7 +5,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #0b0c12;
+  background-color: #1d2021;
 }
 
 html, body {
@@ -14,8 +14,8 @@ html, body {
 
 /* Dark grid background similar to reference layout */
 body {
-  background-color: #0b0c12;
-  color: #e5e5e5;
+  background-color: #1d2021;
+  color: #ebdbb2;
 }
 
 /* Navbar */
@@ -39,50 +39,50 @@ header .blink {
 .about .btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.35rem 0.9rem;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(12, 13, 20, 0.9);
-  color: #e7ecff;
+  justify-content: center;
+  gap: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #262626;
+  color: #ebdbb2;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.2px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px);
-  transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease,
+  box-shadow: none;
+  backdrop-filter: none;
+  transition: transform 120ms ease, border-color 120ms ease,
     background 120ms ease, color 120ms ease;
 }
 
 .about .btn:hover {
   transform: translateY(-1px);
-  border-color: rgba(255, 255, 255, 0.14);
-  background: rgba(18, 20, 30, 0.94);
-  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.46);
-  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.2);
+  background: #2f2f2f;
+  box-shadow: none;
+  color: #fbf1c7;
 }
 
 .about .btn:active {
   transform: translateY(0);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+  box-shadow: none;
 }
 
-/* Projects grid cards: dark neo-glass look */
+/* Projects grid cards */
 .project-card {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
   position: relative;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  background: #0c0e15;
-  box-shadow:
-    inset 4px 4px 9px rgba(0, 0, 0, 0.38),
-    inset -4px -4px 9px rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #282828;
+  box-shadow: none;
   backdrop-filter: none;
-  color: #e8ebf7;
+  color: #ebdbb2;
   text-decoration: none;
-  transition: color 140ms ease, border-color 140ms ease;
+  transition: color 140ms ease, border-color 140ms ease, background 140ms ease;
   overflow: hidden;
 }
 
@@ -97,11 +97,9 @@ header .blink {
 
 .project-card:hover {
   transform: none;
-  border-color: rgba(255, 255, 255, 0.03);
-  background: #0c0e15;
-  box-shadow:
-    inset 4px 4px 9px rgba(0, 0, 0, 0.38),
-    inset -4px -4px 9px rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.16);
+  background: #2d2d2d;
+  box-shadow: none;
 }
 
 .project-card:hover::before {
@@ -110,12 +108,12 @@ header .blink {
 
 .project-card:active {
   transform: translateY(0);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: none;
 }
 
 /* Make Rust tech icon visible on dark cards */
 .project-card [class*="i-logos:rust"] {
-  color: #ffffff !important;
+  color: #fbf1c7 !important;
   filter: invert(1) brightness(1.6);
 }
 
@@ -138,7 +136,7 @@ header .blink {
   padding: 0;
   border: none;
   background: transparent;
-  color: #9fb5ff;
+  color: #a89984;
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
   font-size: 0.95rem;
@@ -146,6 +144,6 @@ header .blink {
 }
 
 .project-link-btn:hover {
-  color: #c6d3ff;
+  color: #d8c6a3;
 }
 

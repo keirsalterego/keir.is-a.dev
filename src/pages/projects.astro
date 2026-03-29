@@ -20,7 +20,7 @@ const { projects } = frontmatter as Frontmatter;
       </div>
       <div class="hero-aside">
         <p class="meta-label">Current focus</p>
-        <p class="meta-value">Rust, Solana, and fast web things</p>
+        <p class="meta-value">Rust backends and Solana protocols</p>
       </div>
     </section>
 
@@ -59,6 +59,9 @@ const { projects } = frontmatter as Frontmatter;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    border: none;
+    border-radius: 0;
+    background: transparent;
   }
 
   .projects-hero {
@@ -72,7 +75,7 @@ const { projects } = frontmatter as Frontmatter;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     font-size: 0.8rem;
-    color: #8aa5ff;
+    color: #928374;
     margin: 0 0 0.25rem 0;
   }
 
@@ -84,18 +87,16 @@ const { projects } = frontmatter as Frontmatter;
 
   .lede {
     margin: 0.35rem 0 0;
-    color: #c5cbe3;
+    color: #bdae93;
     max-width: 48rem;
   }
 
   .hero-aside {
     padding: 1rem 1.1rem;
-    border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.03);
-    background: #0d0f16;
-    box-shadow:
-      inset 6px 6px 12px rgba(0, 0, 0, 0.45),
-      inset -6px -6px 12px rgba(255, 255, 255, 0.035);
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
     backdrop-filter: none;
     min-width: 220px;
     max-width: 260px;
@@ -104,13 +105,13 @@ const { projects } = frontmatter as Frontmatter;
   .meta-label {
     margin: 0;
     font-size: 0.85rem;
-    color: #9da7c2;
+    color: #7c6f64;
   }
 
   .meta-value {
     margin: 0.2rem 0 0;
     font-weight: 700;
-    color: #e8ebf7;
+    color: #ebdbb2;
     font-size: 1.05rem;
   }
 
@@ -119,7 +120,7 @@ const { projects } = frontmatter as Frontmatter;
   }
 
   .projects-note :global(p) {
-    color: #dfe3f3;
+    color: #d5c4a1;
     margin: 0;
   }
 
@@ -157,26 +158,22 @@ const { projects } = frontmatter as Frontmatter;
     align-items: center;
     gap: 0.3rem;
     padding: 0.32rem 0.65rem;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    color: #dfe3f3;
+    border-radius: 0;
+    border: none;
+    color: #d5c4a1;
     text-decoration: none;
     font-size: 0.9rem;
-    background: #0d0f16;
-    box-shadow:
-      inset 2px 2px 4px rgba(0, 0, 0, 0.35),
-      inset -2px -2px 4px rgba(255, 255, 255, 0.025);
+    background: transparent;
+    box-shadow: none;
   }
 
   .pill-ghost {
-    border-color: rgba(255, 255, 255, 0.04);
-    background: #0d0f16;
-    color: #cfd6f4;
+    border-color: transparent;
+    background: transparent;
+    color: #c1ae8b;
     font-size: 0.86rem;
     padding: 0.24rem 0.6rem;
-    box-shadow:
-      inset 2px 2px 4px rgba(0, 0, 0, 0.35),
-      inset -2px -2px 4px rgba(255, 255, 255, 0.025);
+    box-shadow: none;
   }
 
   .projects-grid {

@@ -51,7 +51,7 @@ What a drastic change in circumstances! There are many combinations that we can 
 
 ## The Code, Explained Simply
 
-Let's dissect the code piece by piece. Don't worry if you don't know Rust yet—I'll explain it like I'm chatting with a friend who's curious but new to this.
+Let's dissect the code piece by piece. Don't worry if you don't know Rust yet-I'll explain it like I'm chatting with a friend who's curious but new to this.
 
 1. **Setting the Stage with use Statements**
 
@@ -78,7 +78,7 @@ enum HiringStage {
 }  
 ```
 
-Here, we're creating a list of possible stages a candidate can be in—it's called an enum (short for "enumeration"). Think of it as a multiple-choice list where only one option can be true at a time. The stages are:  
+Here, we're creating a list of possible stages a candidate can be in-it's called an enum (short for "enumeration"). Think of it as a multiple-choice list where only one option can be true at a time. The stages are:  
 * Draft: The application isn't submitted yet.  
 * Submitted: They've sent it in.  
 * UnderReview: You're looking it over.  
@@ -205,7 +205,7 @@ fn reject(&mut self) {
 }
 ```
 
-These wrap things up—either the candidate joins the team or gets a polite "no thanks."
+These wrap things up-either the candidate joins the team or gets a polite "no thanks."
 
 * **Running the Show:** `main`  
 ```rust
@@ -275,13 +275,13 @@ This program is a tiny taste of what Rust can do. It's:
 * **Interactive**: It talks to you and listens to your answers.
 * **Structured**: The enum and struct keep everything organized.
 
-You could expand it — add more stages, store multiple candidates, or save data to a file. It's a foundation for something bigger!
+You could expand it - add more stages, store multiple candidates, or save data to a file. It's a foundation for something bigger!
 
 ## Final Thoughts
 
-I hope this made sense! We took a Rust program and turned it into a story about hiring candidates. You've seen how Rust handles data (with struct and enum), takes input, and makes decisions. If you're curious, try running it yourself—grab Rust from rust-lang.org, paste this code into a file (like main.rs), and type cargo run in your terminal.
+I hope this made sense! We took a Rust program and turned it into a story about hiring candidates. You've seen how Rust handles data (with struct and enum), takes input, and makes decisions. If you're curious, try running it yourself-grab Rust from rust-lang.org, paste this code into a file (like main.rs), and type cargo run in your terminal.
 
-What do you think? Want to tweak it or have questions? Let me know—I'm happy to chat more about Rust or coding in general!
+What do you think? Want to tweak it or have questions? Let me know-I'm happy to chat more about Rust or coding in general!
 
 ```
   .-""""""""-.

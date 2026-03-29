@@ -7,7 +7,7 @@ tags: ["Solana", "Blinks", "Next.js", "Performance", "Web3", "DeFi"]
 
 ## Introduction
 
-October 2025 brought ScholrLink to life—a platform that transforms social media posts into one-tap funding portals using Solana Blinks. But shipping the feature was only half the battle. This month was about optimization, error handling, and building something that actually works at scale.
+October 2025 brought ScholrLink to life-a platform that transforms social media posts into one-tap funding portals using Solana Blinks. But shipping the feature was only half the battle. This month was about optimization, error handling, and building something that actually works at scale.
 
 ## What is ScholrLink?
 

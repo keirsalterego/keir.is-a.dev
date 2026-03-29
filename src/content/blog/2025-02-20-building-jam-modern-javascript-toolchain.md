@@ -11,7 +11,7 @@ February 2025 has been all about slow, deliberate progress on my ambitious proje
 
 ## Why Another JavaScript Toolchain?
 
-Fair question. The JavaScript tooling space is crowded, and for good reason—these tools are incredibly complex. But here's why I started Jam:
+Fair question. The JavaScript tooling space is crowded, and for good reason-these tools are incredibly complex. But here's why I started Jam:
 
 1. **Learning by Building**: There's no better way to understand how modern bundlers, transpilers, and dev servers work than building one yourself
 2. **Performance Experiments**: I wanted to explore alternative approaches to hot module replacement and code splitting

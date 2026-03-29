@@ -94,7 +94,7 @@
 
 # February 2025
 
-- Making slow progress on Jam – my JS toolchain.
+- Making slow progress on Jam - my JS toolchain.
 - Keeping up with computer graphics.
 - Reading: A Quiet Life in the Country
 - Playing: Lies of P

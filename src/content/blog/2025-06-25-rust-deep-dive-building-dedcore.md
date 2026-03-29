@@ -161,7 +161,7 @@ fn process_with_progress(files: Vec<PathBuf>) -> Result<Stats> {
 }
 ```
 
-**Lesson**: "Fearless concurrency" isn't marketing—the compiler prevents data races.
+**Lesson**: "Fearless concurrency" isn't marketing-the compiler prevents data races.
 
 ## Building DedCore: Architecture
 

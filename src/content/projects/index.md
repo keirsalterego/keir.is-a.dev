@@ -1,22 +1,19 @@
 ---
 projects:
   PRs/MRs That Actually Merged:
+    - name: Dora-rs - Metadata::get_or ergonomic defaults
+      link: https://github.com/dora-rs/dora/pull/1400
+      desc: Added Metadata::get_or for cleaner parameter access with defaults, reducing boilerplate and improving ergonomics in dora-rs.
+      icon: i-ph:git-pull-request-duotone
+      tech:
+        - i-logos:rust
+      repo: dora-rs/dora
     - name: Rust Clippy - useless_conversion lint
       link: https://github.com/rust-lang/rust-clippy/pull/16238
       desc: Enhanced .into_iter() suggestions for nested references, fixing over-borrowed code patterns in the official Rust linter.
       icon: i-ph:git-merge-duotone
       tech:
         - i-logos:rust
-  Shiny Things on the Web:
-    - name: Cube Solver
-      link: https://cubejs.mxnish.me
-      desc: A solver for Rubik's Cube
-      icon: i-ph:cube-duotone
-      tech:
-        - i-logos:javascript
-        - i-vscode-icons:file-type-html
-        - i-vscode-icons:file-type-css
-      repo: keirsalterego/cube.js
   Rust & Rockets:
     - name: DedCore
       link: https://dedcore.live
@@ -57,7 +54,7 @@ projects:
   On-Chain Chaos (Anchor & Solana):
     - name: Time Capsule Protocol
       link: https://time-capsule-protocol.vercel.app
-      desc: "Trustless time-locking: encrypt now, auto-reveal later—no intermediaries."
+      desc: "Trustless time-locking: encrypt now, auto-reveal later-no intermediaries."
       icon: i-ph:lock-key-duotone
       tech:
         - i-simple-icons:solana

@@ -48,7 +48,7 @@ const getExcerpt = (entry: (typeof journalEntries)[number]) => {
       <p class="quote">
         "The future belongs to those who learn more skills and combine them in creative ways."
       </p>
-      <span class="quote-source">— Robert Greene, Mastery</span>
+      <span class="quote-source">- Robert Greene, Mastery</span>
     </div>
   </section>
 
@@ -88,7 +88,7 @@ const getExcerpt = (entry: (typeof journalEntries)[number]) => {
       text-transform: uppercase;
       letter-spacing: 0.12em;
       font-size: 0.8rem;
-      color: #8aa5ff;
+      color: #928374;
       margin: 0 0 0.2rem 0;
     }
 
@@ -99,7 +99,7 @@ const getExcerpt = (entry: (typeof journalEntries)[number]) => {
     }
 
     .lede {
-      color: #c5cbe3;
+      color: #bdae93;
       margin: 0.3rem 0 0;
       max-width: 38rem;
     }
@@ -107,24 +107,22 @@ const getExcerpt = (entry: (typeof journalEntries)[number]) => {
     .hero-aside {
       max-width: 22rem;
       padding: 1rem 1.2rem;
-      border-radius: 16px;
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      background: #0d0f16;
-      box-shadow:
-        inset 7px 7px 14px rgba(0, 0, 0, 0.52),
-        inset -7px -7px 14px rgba(255, 255, 255, 0.04);
-      backdrop-filter: blur(8px);
-      color: #e8ebf7;
+      border-radius: 0;
+      border: none;
+      background: transparent;
+      box-shadow: none;
+      backdrop-filter: none;
+      color: #ebdbb2;
     }
 
     .quote {
       margin: 0 0 0.4rem 0;
-      color: #d7dcf0;
+      color: #cbb89a;
       line-height: 1.5;
     }
 
     .quote-source {
-      color: #9da7c2;
+      color: #7c6f64;
       font-size: 0.9rem;
     }
 
@@ -144,7 +142,7 @@ const getExcerpt = (entry: (typeof journalEntries)[number]) => {
       font-size: 1.2rem;
       font-weight: 800;
       letter-spacing: 0.04em;
-      color: #a8b5ff;
+      color: #928374;
     }
 
     .year-list {
@@ -164,7 +162,7 @@ const getExcerpt = (entry: (typeof journalEntries)[number]) => {
       gap: 0.75rem;
       padding: 0.85rem 0.2rem;
       text-decoration: none;
-      color: #ffffff;
+      color: #fbf1c7;
       border-bottom: 1px solid rgba(255, 255, 255, 0.06);
       transition: background 140ms ease, border-color 140ms ease, transform 120ms ease;
     }
@@ -175,12 +173,12 @@ const getExcerpt = (entry: (typeof journalEntries)[number]) => {
 
     .journal-row:hover {
       background: transparent;
-      border-color: rgba(138, 165, 255, 0.18);
+      border-color: rgba(255, 255, 255, 0.14);
       transform: translateX(1px);
     }
 
     .journal-row__date {
-      color: #9fb5ff;
+      color: #a89984;
       font-size: 0.95rem;
       white-space: nowrap;
       overflow: hidden;
@@ -192,14 +190,14 @@ const getExcerpt = (entry: (typeof journalEntries)[number]) => {
       font-size: 1.05rem;
       font-weight: 700;
       line-height: 1.2;
-      color: #ffffff;
+      color: #fbf1c7;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
     }
 
     .journal-row__arrow {
-      color: #ffffff;
+      color: #fbf1c7;
       font-weight: 700;
     }
 
