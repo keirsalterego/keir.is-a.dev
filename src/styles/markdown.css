@@ -63,7 +63,7 @@ html.dark .prose div[class*="language-"] code span {
 }
 
 .prose div[class*="language-"] {
-  @apply relative my-2 border pt-6 rounded-md;
+  @apply relative my-2 border pt-6 rounded-md bg-[#282828];
 }
 
 .prose div[class*="language-"]::before {
@@ -103,7 +103,7 @@ html.dark .prose div[class*="language-"] code > span[data-highlighted-line] {
 /** Inline code **/
 
 .prose :not(pre) > code {
-  @apply text-sm;
+  @apply text-sm bg-[#282828] px-1.5 py-0.5 rounded text-[#ebdbb2];
 }
 
 /** Containers **/

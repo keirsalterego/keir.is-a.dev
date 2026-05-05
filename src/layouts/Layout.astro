@@ -30,7 +30,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -69,22 +69,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="sitemap" href="/sitemap-index.xml" type="application/xml" />
     <link rel="alternate" href="/rss.xml" type="application/rss+xml" />
 
-    <!-- Color Theme -->
-    <script>
-      const checkTheme = () => {
-        const prefersDark =
-          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const setting = localStorage.getItem("solidjs-use-color-scheme") || "auto";
-
-        document.documentElement.classList.toggle(`theme-${setting}`, true);
-
-        if (setting === "dark" || (setting !== "light" && prefersDark))
-          document.documentElement.classList.toggle("dark", true);
-      };
-
-      document.addEventListener("astro:after-swap", checkTheme);
-      checkTheme();
-    </script>
+    <!-- Color Theme forced to dark -->
 
     <!-- Page Transitions -->
     <ClientRouter />

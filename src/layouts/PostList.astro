@@ -155,13 +155,15 @@ const years = Object.keys(groupedByYear).sort((a, b) => Number(b) - Number(a));
       font-size: 1.05rem;
       font-weight: 700;
       grid-column: 1 / 2;
+      color: #ebdbb2;
     }
 
     .post-card__arrow {
       color: #a89984;
       font-weight: 700;
       align-self: center;
-      grid-row: 1;
+      grid-row: 1 / -1;
+      grid-column: 2 / 3;
     }
 
     @media (max-width: 720px) {
