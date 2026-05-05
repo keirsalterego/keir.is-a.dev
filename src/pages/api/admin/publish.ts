@@ -35,7 +35,7 @@ date: ${slug.substring(0, 10)}
 
 `;
     } else if (collection === "builds") {
-      path = `src/content/projects/index.md`;
+      path = `src/content/builds/index.md`;
       isYamlAppend = true;
     } else if (collection === "now") {
       path = `src/content/now.md`;
