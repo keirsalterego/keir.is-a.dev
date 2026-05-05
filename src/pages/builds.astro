@@ -1,47 +1,47 @@
 ---
-import { frontmatter, Content } from "@content/projects/index.md";
+import { frontmatter, Content } from "@content/builds/index.md";
 import { SITE } from "@config";
-import type { ProjectItem } from "@types";
-import Project from "@components/Project";
+import type { BuildItem } from "@types";
+import Build from "@components/Build";
 import Layout from "@layouts/Layout.astro";
 
 interface Frontmatter {
-  projects: Record<string, ProjectItem[]>;
+  builds: Record<string, BuildItem[]>;
 }
 
-const { projects } = frontmatter as Frontmatter;
+const { builds } = frontmatter as Frontmatter;
 ---
-<Layout title={`Projects - ${SITE.title}`} activePage="projects">
-  <main class="projects-shell">
-    <section class="projects-hero">
+<Layout title={`Builds - ${SITE.title}`} activePage="builds">
+  <main class="builds-shell">
+    <section class="builds-hero">
       <div>
-        <p class="eyebrow">/projects</p>
+        <p class="eyebrow">/builds</p>
         <h1>The Garage</h1><p class="lede">A wolf on a chase!</p>
       </div>
       <div class="hero-aside">
         <p class="meta-label">Current focus</p>
-        <p class="meta-value">Rust backends and Solana protocols</p>
+        <p class="meta-value">Systems engineering & Rust security</p>
       </div>
     </section>
 
-    <section class="projects-note">
+    <section class="builds-note">
       <Content />
     </section>
 
-    <section class="projects-groups">
+    <section class="builds-groups">
       {
-        Object.keys(projects).map((key) => (
+        Object.keys(builds).map((key) => (
           <article class="group-card">
             <div class="group-header">
               <div>
                 <p class="eyebrow">Collection</p>
                 <h3>{key}</h3>
               </div>
-              <span class="pill pill-ghost">{projects[key].length} projects</span>
+              <span class="pill pill-ghost">{builds[key].length} builds</span>
             </div>
-            <div class="projects-grid">
-              {projects[key].map((project) => (
-                <Project client:load project={project} />
+            <div class="builds-grid">
+              {builds[key].map((build) => (
+                <Build client:load build={build} />
               ))}
             </div>
           </article>
@@ -52,7 +52,7 @@ const { projects } = frontmatter as Frontmatter;
 </Layout>
 
 <style>
-  .projects-shell {
+  .builds-shell {
     max-width: 1100px;
     margin: 0 auto;
     padding: 1.5rem 1.25rem 2.5rem;
@@ -64,7 +64,7 @@ const { projects } = frontmatter as Frontmatter;
     background: transparent;
   }
 
-  .projects-hero {
+  .builds-hero {
     display: flex;
     justify-content: space-between;
     gap: 1.25rem;
@@ -79,7 +79,7 @@ const { projects } = frontmatter as Frontmatter;
     margin: 0 0 0.25rem 0;
   }
 
-  .projects-hero h1 {
+  .builds-hero h1 {
     margin: 0;
     font-size: 2.5rem;
     letter-spacing: 0.01em;
@@ -115,16 +115,16 @@ const { projects } = frontmatter as Frontmatter;
     font-size: 1.05rem;
   }
 
-  .projects-note {
+  .builds-note {
     display: none;
   }
 
-  .projects-note :global(p) {
+  .builds-note :global(p) {
     color: #d5c4a1;
     margin: 0;
   }
 
-  .projects-groups {
+  .builds-groups {
     display: flex;
     flex-direction: column;
     gap: 1.1rem;
@@ -176,7 +176,7 @@ const { projects } = frontmatter as Frontmatter;
     box-shadow: none;
   }
 
-  .projects-grid {
+  .builds-grid {
     position: relative;
     z-index: 1;
     display: grid;
@@ -185,7 +185,7 @@ const { projects } = frontmatter as Frontmatter;
   }
 
   @media (max-width: 800px) {
-    .projects-hero {
+    .builds-hero {
       flex-direction: column;
     }
 

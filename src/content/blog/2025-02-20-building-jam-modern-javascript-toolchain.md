@@ -146,7 +146,7 @@ Jam is still in early development, but I'm planning to open-source it soon. If y
 - Build system optimization
 - Developer experience design
 
-Stay tuned! I'll be sharing more detailed technical posts as Jam progresses.
+Stay tuned! I'll be sharing more detailed technical articles as Jam progresses.
 
 ## Resources
 

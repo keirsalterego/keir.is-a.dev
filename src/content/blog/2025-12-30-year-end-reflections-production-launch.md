@@ -635,7 +635,7 @@ trackMetric('blink.conversion', 1, {
 - **$35k+ in value locked**
 - **Active Discord community**
 
-### Blog Posts Written
+### Blog articles Written
 
 - 11 technical deep-dives (12 including this one!)
 - Topics from Rust to Web3

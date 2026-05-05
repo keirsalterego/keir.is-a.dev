@@ -7,8 +7,8 @@ import TocButtons from "@components/TocButtons";
 import Giscus from "@components/Giscus";
 import {
   getPostDate,
-  getPosts,
-  getSortedPosts,
+  getarticles,
+  getSortedarticles,
   formatDate,
   readingTime,
   lastUpdated
@@ -22,28 +22,28 @@ const { post } = Astro.props;
 const { title, author, tags } = post.data;
 
 const { Content } = await render(post);
-const tagURL = "/posts/tags/";
+const tagURL = "/articles/tags/";
 
 // does this post has table of contents enabled?
 const hasToc = /## toc\n/.test(post.body ?? "");
 
 // previous and next post
-const posts = getSortedPosts(await getPosts());
-const postIndex = posts.findIndex((p) => p.id === post.id);
+const articles = getSortedarticles(await getarticles());
+const postIndex = articles.findIndex((p) => p.id === post.id);
 
 const nextPost =
   postIndex === 0
     ? null
     : {
-        title: posts[postIndex - 1].data.title,
-        path: posts[postIndex - 1].id
+        title: articles[postIndex - 1].data.title,
+        path: articles[postIndex - 1].id
       };
 const prevPost =
-  postIndex === posts.length - 1
+  postIndex === articles.length - 1
     ? null
     : {
-        title: posts[postIndex + 1].data.title,
-        path: posts[postIndex + 1].id
+        title: articles[postIndex + 1].data.title,
+        path: articles[postIndex + 1].id
       };
 
 // edit link
@@ -60,7 +60,7 @@ const lastUpdatedText = THEME.lastUpdatedText;
   title={`${title} - ${SITE.title}`}
   author={author}
   hasToc={hasToc}
-  activePage="posts"
+  activePage="articles"
 >
   <div mt-6 mb-8>
     <h1 class="text-4xl font-bold leading-12 my-0" transition:name={post.id}>
@@ -113,14 +113,14 @@ const lastUpdatedText = THEME.lastUpdatedText;
       <div class="flex justify-between mt-3 pt-3 text-[0.95em] border-t">
         <span>
           {prevPost && (
-            <a href={`/posts/${prevPost.path}`} class="!text-fg before:content-['←']">
+            <a href={`/articles/${prevPost.path}`} class="!text-fg before:content-['←']">
               {prevPost.title}
             </a>
           )}
         </span>
         <span text-right>
           {nextPost && (
-            <a href={`/posts/${nextPost.path}`} class="!text-fg after:content-['→']">
+            <a href={`/articles/${nextPost.path}`} class="!text-fg after:content-['→']">
               {nextPost.title}
             </a>
           )}

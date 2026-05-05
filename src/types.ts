@@ -4,7 +4,7 @@ export interface SocialItem {
   name?: string;
 }
 
-export interface ProjectItem {
+export interface BuildItem {
   name: string;
   link: string;
   desc: string;

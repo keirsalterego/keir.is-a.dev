@@ -1,9 +1,9 @@
 ---
-name: Manish.
+name: Keir.
 subname: keirsalterego
 avatarFront: /img/me.jpg
 avatarBack: /img/avatar.jpg
-tltr: I build the infrastructure that others build on, low-level systems, Rust backends, Solana infra, and protocol design. I care about correctness, performance, and the machines underneath.
+tltr: "Rust Systems Engineer & Founder @ Vyrox Security | Building autonomous AI SOC analysts and low-level infrastructure."
 socials:
   - icon: i-academicons:cv
     link: /files/cv/cv.pdf
@@ -20,13 +20,15 @@ socials:
 
 ## $ nvim bio.txt
 
-I build the infrastructure that others build on: low-level systems, Rust backends, Solana infra, and protocol design.
+I build the infrastructure that others build on: low-level systems, Rust security tooling, Solana infra, and protocol design.
 
-I work closest to the machine layer where correctness, performance, and reliability are non-negotiable. Most of my focus is on systems engineering problems like runtime behavior, backend performance paths, and protocol-grade architecture decisions.
+I am the Founder of **Vyrox Security**, where we are building memory-safe, autonomous AI SOC infrastructure to investigate threats deterministically.
 
-Current focus: **Systems Engineering**, **Rust Backend Engineering**, and **Solana Protocol Engineering**.
+I work closest to the machine layer where correctness, performance, and reliability are non-negotiable. Most of my focus is on systems engineering problems like runtime behavior, system performance paths, and protocol-grade architecture decisions.
 
-Check out my [projects](/projects) and [journal](/journal) for build logs, experiments, and infra notes.
+Current focus: **Vyrox Security**, **Systems Engineering**, and **Rust Security Engineering**.
+
+Check out my [builds](/builds) and [journal](/journal) for Vyrox build logs, experiments, and infra notes.
 
 Always compiling. Always optimizing.
 

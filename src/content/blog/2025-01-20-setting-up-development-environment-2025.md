@@ -546,7 +546,7 @@ This setup will evolve throughout 2025 as I:
 1. **Build Rust projects** (DedCore, RustyTasks)
 2. **Explore Solana development** (Need to add Solana CLI tools)
 3. **Contribute to open source** (Rust, Clippy, etc.)
-4. **Write technical blog posts** (This workflow makes it easy)
+4. **Write technical blog articles** (This workflow makes it easy)
 
 The goal: maximum productivity with minimal friction.
 

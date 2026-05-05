@@ -1,3 +1,31 @@
+# May 2026
+
+- **Vyrox Security:** Building the autonomous AI SOC infrastructure. Onboarding early pilots and scaling the deterministic threat investigation engine.
+- **Systems Engineering:** Hardening the Python monorepo and enforcing strict environment validation.
+
+---
+
+# April 2026
+
+- **Vyrox Security:** Shipped the Day 1 core foundation. Set up the initial architecture, CI pipelines, and HMAC-SHA256 crypto services.
+- **Open Source:** Merged a PR into dora-rs (`Metadata::get_or`) to improve ergonomics and reduce boilerplate for distributed dataflows.
+
+---
+
+# March 2026
+
+- **Ideation:** Exploring the intersection of memory-safe systems and deterministic AI agents. The idea for Vyrox is taking shape.
+- **Systems Engineering:** Refactoring low-level network paths to squeeze out latency before transitioning focus to security infrastructure.
+
+---
+
+# February 2026
+
+- **Systems Tools:** Polishing DedCore for a stable release. Tuned the TUI and stabilized the multi-algorithm hashing pipelines.
+- **Learning:** Deep diving into deterministic state machines and their applications in security.
+
+---
+
 # January 2026
 
 - **Open Source:** Merged PR into rust-lang/rust-clippy fixing over-borrowed suggestions in the `useless_conversion` lint, improving code quality for the entire Rust ecosystem.
@@ -41,7 +69,7 @@
 
 - **Solana Smart Contracts:** Building a token swap DApp on Solana using Anchor framework. Currently implementing the swap functionality and writing tests in TypeScript.
 - **Rust Optimization:** Refactoring Solana programs to reduce compute units by ~15% through better memory management and instruction optimization.
-- **Python Backend:** Developing a FastAPI service for NFT metadata processing that handles 1000+ RPS with Redis caching.
+- **Python Services:** Developing a FastAPI service for NFT metadata processing that handles 1000+ RPS with Redis caching.
 - **Security Research:** Writing a script to audit token permissions in browser localStorage for common vulnerabilities.
 - **Learning:** Deep diving into Solana's Proof of History consensus and its security implications.
 

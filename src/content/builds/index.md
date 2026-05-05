@@ -1,7 +1,16 @@
 ---
-projects:
-  PRs/MRs That Actually Merged:
-    - name: Dora-rs - Metadata::get_or ergonomic defaults
+builds:
+  Security & Red/Blue Team:
+    - name: Vyrox Security
+      link: https://vyrox.dev
+      desc: Memory-safe, autonomous AI SOC infrastructure for deterministic threat investigation.
+      icon: i-ph:shield-check-duotone
+      tech:
+        - i-logos:rust
+        - i-logos:python
+      repo: vyrox
+  Open Source Contributions:
+    - name: Dora-rs - Metadata::get_or
       link: https://github.com/dora-rs/dora/pull/1400
       desc: Added Metadata::get_or for cleaner parameter access with defaults, reducing boilerplate and improving ergonomics in dora-rs.
       icon: i-ph:git-pull-request-duotone
@@ -14,7 +23,26 @@ projects:
       icon: i-ph:git-merge-duotone
       tech:
         - i-logos:rust
-  Rust & Rockets:
+  Solana / On-chain:
+    - name: Time Capsule Protocol
+      link: https://time-capsule-protocol.vercel.app
+      desc: "Trustless time-locking: encrypt now, auto-reveal later-no intermediaries."
+      icon: i-ph:lock-key-duotone
+      tech:
+        - i-simple-icons:solana
+        - i-logos:rust
+        - i-carbon:time
+      repo: keirsalterego/tc-protocol
+    - name: ScholrLink
+      link: https://scholr-link.vercel.app
+      desc: "Social articles become one-tap Solana funding portals with Blinks and soulbound patron badges."
+      icon: i-ph:graduation-cap-duotone
+      tech:
+        - i-simple-icons:solana
+        - i-logos:rust
+        - i-simple-icons:nextdotjs
+      repo: keirsalterego/scholr.link
+  Systems Tools:
     - name: DedCore
       link: https://dedcore.live
       desc: A high-performance file deduplication tool with TUI, featuring multi-algorithm hashing and smart filtering.
@@ -22,6 +50,7 @@ projects:
       tech:
         - i-logos:rust
       repo: keirsalterego/dedcore
+
     - name: RustyTasks
       link: https://github.com/keirsalterego/rustytasks
       desc: Conquer your tasks with ruthless efficiency using this command-line powerhouse.
@@ -35,39 +64,4 @@ projects:
       tech:
         - i-logos:rust
       icon: i-ph:code-duotone
-    - name: Super Manager
-      link: https://github.com/keirsalterego/super-manager
-      desc: A lightning fast File Manager. (development)
-      icon: i-ph:folders-duotone
-      tech:
-        - i-logos:rust
-        - i-logos:vitejs
-        - i-logos:tailwindcss-icon
-    - name: FireFox
-      link: https://github.com/keirsalterego/FireFox
-      desc: A browser made with rust (development)
-      icon: i-ph:globe-hemisphere-west-duotone
-      tech:
-        - i-logos:rust
-        - i-logos:vitejs
-        - i-logos:tailwindcss-icon
-  On-Chain Chaos (Anchor & Solana):
-    - name: Time Capsule Protocol
-      link: https://time-capsule-protocol.vercel.app
-      desc: "Trustless time-locking: encrypt now, auto-reveal later-no intermediaries."
-      icon: i-ph:lock-key-duotone
-      tech:
-        - i-simple-icons:solana
-        - i-logos:rust
-        - i-carbon:time
-      repo: keirsalterego/tc-protocol
-    - name: ScholrLink
-      link: https://scholr-link.vercel.app
-      desc: "Social posts become one-tap Solana funding portals with Blinks and soulbound patron badges."
-      icon: i-ph:graduation-cap-duotone
-      tech:
-        - i-simple-icons:solana
-        - i-logos:rust
-        - i-simple-icons:nextdotjs
-      repo: keirsalterego/scholr.link
 ---

@@ -69,8 +69,8 @@ header .blink {
   box-shadow: none;
 }
 
-/* Projects grid cards */
-.project-card {
+/* Builds grid cards */
+.build-card {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
@@ -86,50 +86,50 @@ header .blink {
   overflow: hidden;
 }
 
-.project-card::before {
+.build-card::before {
   content: none;
 }
 
-.project-card > * {
+.build-card > * {
   position: relative;
   z-index: 1;
 }
 
-.project-card:hover {
+.build-card:hover {
   transform: none;
   border-color: rgba(255, 255, 255, 0.16);
   background: #2d2d2d;
   box-shadow: none;
 }
 
-.project-card:hover::before {
+.build-card:hover::before {
   opacity: 1;
 }
 
-.project-card:active {
+.build-card:active {
   transform: translateY(0);
   box-shadow: none;
 }
 
 /* Make Rust tech icon visible on dark cards */
-.project-card [class*="i-logos:rust"] {
+.build-card [class*="i-logos:rust"] {
   color: #fbf1c7 !important;
   filter: invert(1) brightness(1.6);
 }
 
-/* Tech icon sizing inside project cards */
-.project-card .tech-icon {
+/* Tech icon sizing inside build cards */
+.build-card .tech-icon {
   font-size: 1.05rem;
   line-height: 1;
 }
 
-.project-links {
+.build-links {
   display: inline-flex;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-.project-link-btn {
+.build-link-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -143,7 +143,7 @@ header .blink {
   transition: color 120ms ease;
 }
 
-.project-link-btn:hover {
+.build-link-btn:hover {
   color: #d8c6a3;
 }
 

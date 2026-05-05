@@ -1,7 +1,7 @@
 ---
 import { slugify } from "@renovamen/utils";
 import PostList from "@layouts/PostList.astro";
-import { getPosts, getTags } from "@utils";
+import { getarticles, getTags } from "@utils";
 
 export interface Props {
   tag: string;
@@ -10,8 +10,8 @@ export interface Props {
 const { tag } = Astro.props;
 
 export const getStaticPaths = async () => {
-  const posts = await getPosts();
-  const { tags } = getTags(posts);
+  const articles = await getarticles();
+  const { tags } = getTags(articles);
 
   return tags.map((tag) => ({
     params: { tag: slugify(tag) },

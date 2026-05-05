@@ -3,9 +3,9 @@ import { SITE } from "@config";
 import Layout from "@layouts/Layout.astro";
 import {
   getPostDate,
-  getPosts,
-  getPostsByTag,
-  getSortedPosts,
+  getarticles,
+  getarticlesByTag,
+  getSortedarticles,
   formatDate
 } from "@utils";
 
@@ -17,36 +17,36 @@ const { tag } = Astro.props;
 
 const title = "Articles";
 
-const posts = await getPosts();
-const filteredPosts = tag ? getPostsByTag(posts, tag) : posts;
-const sortedPosts = getSortedPosts(filteredPosts);
+const articles = await getarticles();
+const filteredarticles = tag ? getarticlesByTag(articles, tag) : articles;
+const sortedarticles = getSortedarticles(filteredarticles);
 
-const groupedByYear = sortedPosts.reduce((acc, item) => {
+const groupedByYear = sortedarticles.reduce((acc, item) => {
   const year = getPostDate(item.id).slice(0, 4);
   (acc[year] ||= []).push(item);
   return acc;
-}, {} as Record<string, typeof sortedPosts>);
+}, {} as Record<string, typeof sortedarticles>);
 
 const years = Object.keys(groupedByYear).sort((a, b) => Number(b) - Number(a));
 ---
 
-<Layout title={`${title} - ${SITE.title}`} activePage={"posts"}>
-  <main class="posts-shell">
-    <section class="posts-hero">
+<Layout title={`${title} - ${SITE.title}`} activePage={"articles"}>
+  <main class="articles-shell">
+    <section class="articles-hero">
       <div>
-        <p class="eyebrow">/posts</p>
+        <p class="eyebrow">/articles</p>
         <h1>Notes from the build log.</h1>
       </div>
     </section>
 
-    <section class="posts-grid">
+    <section class="articles-grid">
       {
         years.map((year) => (
           <div class="year-block">
             <div class="year-label">{year}</div>
             <div class="year-grid">
               {groupedByYear[year].map((item) => (
-                <a class="post-card" href={`/posts/${item.id}`} transition:name={item.id}>
+                <a class="post-card" href={`/articles/${item.id}`} transition:name={item.id}>
                   <div class="post-card__date">{formatDate(getPostDate(item.id), 0)}</div>
                   <h3 class="post-card__title">{item.data.title}</h3>
                   <div class="post-card__arrow" aria-hidden="true">→</div>
@@ -60,7 +60,7 @@ const years = Object.keys(groupedByYear).sort((a, b) => Number(b) - Number(a));
   </main>
 
   <style>
-    .posts-shell {
+    .articles-shell {
       max-width: 1100px;
       margin: 0 auto;
       padding: 1.5rem 1.25rem 2.5rem;
@@ -69,7 +69,7 @@ const years = Object.keys(groupedByYear).sort((a, b) => Number(b) - Number(a));
       background: transparent;
     }
 
-    .posts-hero {
+    .articles-hero {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
@@ -91,7 +91,7 @@ const years = Object.keys(groupedByYear).sort((a, b) => Number(b) - Number(a));
       max-width: 38rem;
     }
 
-    .posts-grid {
+    .articles-grid {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
@@ -165,7 +165,7 @@ const years = Object.keys(groupedByYear).sort((a, b) => Number(b) - Number(a));
     }
 
     @media (max-width: 720px) {
-      .posts-hero {
+      .articles-hero {
         flex-direction: column;
         align-items: flex-start;
       }

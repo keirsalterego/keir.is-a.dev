@@ -1,11 +1,11 @@
 import { onMount, createSignal, Show, Switch, Match, For } from "solid-js";
 import type { Component } from "solid-js";
 import { OhVueIcons, OhMyCV } from "./icons";
-import type { ProjectItem } from "@types";
+import type { BuildItem } from "@types";
 
-export const Project: Component<{ project: ProjectItem }> = (props) => {
+export const Build: Component<{ build: BuildItem }> = (props) => {
   /* eslint-disable-next-line solid/reactivity */
-  const api = "https://api.github.com/repos/" + props.project.repo;
+  const api = "https://api.github.com/repos/" + props.build.repo;
   const [star, setStar] = createSignal<string>();
 
   const getRepoStars = async () => {
@@ -13,25 +13,25 @@ export const Project: Component<{ project: ProjectItem }> = (props) => {
     return data.stargazers_count;
   };
 
-  onMount(async () => props.project.repo && setStar(await getRepoStars()));
+  onMount(async () => props.build.repo && setStar(await getRepoStars()));
 
-  const isGithubLink = props.project.link?.includes("github.com/") ?? false;
-  const liveHref = props.project.link && !isGithubLink ? props.project.link : undefined;
-  const repoHref = props.project.repo
-    ? `https://github.com/${props.project.repo}`
+  const isGithubLink = props.build.link?.includes("github.com/") ?? false;
+  const liveHref = props.build.link && !isGithubLink ? props.build.link : undefined;
+  const repoHref = props.build.repo
+    ? `https://github.com/${props.build.repo}`
     : isGithubLink
-      ? props.project.link
+      ? props.build.link
       : undefined;
 
   return (
-    <article class="project-card relative hstack gap-x-5 p-4 !no-underline !text-fg">
+    <article class="build-card relative hstack gap-x-5 p-4 !no-underline !text-fg">
       <div flex-auto h-full>
         <div class="hstack flex-wrap">
           <div whitespace-nowrap mr-3>
-            {props.project.name}
+            {props.build.name}
           </div>
           <div hstack gap-x-2>
-            <For each={props.project.tech}>
+            <For each={props.build.tech}>
               {(icon) => <span class={`tech-icon ${icon}`} />}
             </For>
 
@@ -43,15 +43,15 @@ export const Project: Component<{ project: ProjectItem }> = (props) => {
             </Show>
           </div>
         </div>
-        <div mt-1 text="sm fg-light" innerHTML={props.project.desc} />
-        <div class="project-links" mt-3>
+        <div mt-1 text="sm fg-light" innerHTML={props.build.desc} />
+        <div class="build-links" mt-3>
           <Show when={liveHref}>
-            <a class="project-link-btn" href={liveHref} target="_blank" rel="noopener noreferrer">
+            <a class="build-link-btn" href={liveHref} target="_blank" rel="noopener noreferrer">
               Live
             </a>
           </Show>
           <Show when={repoHref}>
-            <a class="project-link-btn" href={repoHref} target="_blank" rel="noopener noreferrer">
+            <a class="build-link-btn" href={repoHref} target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
           </Show>
@@ -59,11 +59,11 @@ export const Project: Component<{ project: ProjectItem }> = (props) => {
       </div>
 
       <div pt-2 text="3xl fg-light">
-        <Switch fallback={<div class={props.project.icon || "i-carbon-unknown"} />}>
-          <Match when={props.project.icon === "oh-vue-icons"}>
+        <Switch fallback={<div class={props.build.icon || "i-carbon-unknown"} />}>
+          <Match when={props.build.icon === "oh-vue-icons"}>
             <OhVueIcons />
           </Match>
-          <Match when={props.project.icon === "oh-my-cv"}>
+          <Match when={props.build.icon === "oh-my-cv"}>
             <OhMyCV />
           </Match>
         </Switch>
@@ -72,4 +72,4 @@ export const Project: Component<{ project: ProjectItem }> = (props) => {
   );
 };
 
-export default Project;
+export default Build;

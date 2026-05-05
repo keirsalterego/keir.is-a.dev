@@ -7,13 +7,13 @@ tags: ["Solana", "Blinks", "Next.js", "Performance", "Web3", "DeFi"]
 
 ## Introduction
 
-October 2025 brought ScholrLink to life-a platform that transforms social media posts into one-tap funding portals using Solana Blinks. But shipping the feature was only half the battle. This month was about optimization, error handling, and building something that actually works at scale.
+October 2025 brought ScholrLink to life-a platform that transforms social media articles into one-tap funding portals using Solana Blinks. But shipping the feature was only half the battle. This month was about optimization, error handling, and building something that actually works at scale.
 
 ## What is ScholrLink?
 
 ScholrLink turns scholarships and funding requests into blockchain-powered social interactions:
 
-1. **Creator** posts about their project/need
+1. **Creator** articles about their project/need
 2. **Blink** converts the post into an actionable funding button
 3. **Supporters** fund with one tap, directly on Twitter/Discord
 4. **NFT Badge**: Supporters get soulbound "patron badges"

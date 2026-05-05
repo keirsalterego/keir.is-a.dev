@@ -17,8 +17,6 @@ interface Frontmatter {
 
 const { name, subname, avatarFront, avatarBack, tltr, socials } =
   frontmatter as Frontmatter;
-
-const roles = ["Systems Engineer", "Rust Backend Engineer", "Solana Protocol Engineer"];
 ---
 
 <Layout class="about" title={`About - ${SITE.title}`}>
@@ -30,21 +28,15 @@ const roles = ["Systems Engineer", "Rust Backend Engineer", "Solana Protocol Eng
           {name}
           {subname && <span class="landing__sub"> ({subname})</span>}
         </h1>
-        <div class="role-ticker" aria-label="current roles">
-          <div class="role-ticker__track">
-            {roles.map((role) => <div class="role-ticker__item">{role}</div>)}
-            <div class="role-ticker__item">{roles[0]}</div>
-          </div>
-        </div>
         <div class="landing__links">
           <Links socials={socials} />
         </div>
         {tltr && <p class="landing__lede">{tltr}</p>}
 
         <div class="landing__actions">
-          <a class="cta cta-primary" href="/projects">See projects</a>
+          <a class="cta cta-primary" href="https://vyrox.dev">Founding Vyrox Security &rarr;</a>
+          <a class="cta cta-ghost" href="/builds">See builds</a>
           <a class="cta cta-ghost" href="/journal">Journal</a>
-          <a class="cta cta-ghost" href="/now">Now</a>
         </div>
 
         <div class="current-mode-inline">
@@ -66,8 +58,8 @@ const roles = ["Systems Engineer", "Rust Backend Engineer", "Solana Protocol Eng
           <p class="meta-label">Where to dive in</p>
           <ul class="meta-list">
             <li><span class="i-uil:arrow-right" aria-hidden="true" /> Latest build logs in /journal</li>
-            <li><span class="i-uil:arrow-right" aria-hidden="true" /> Long-form notes in /posts</li>
-            <li><span class="i-uil:arrow-right" aria-hidden="true" /> Active experiments in /projects</li>
+            <li><span class="i-uil:arrow-right" aria-hidden="true" /> Long-form notes in /articles</li>
+            <li><span class="i-uil:arrow-right" aria-hidden="true" /> Active experiments in /builds</li>
           </ul>
         </div>
 
@@ -82,6 +74,27 @@ const roles = ["Systems Engineer", "Rust Backend Engineer", "Solana Protocol Eng
   </section>
 
   <section class="about-body">
+    <section class="vyrox-spotlight" aria-label="Vyrox Security Spotlight">
+      <p class="meta-label">Currently building</p>
+      <h2 class="spotlight-title">Vyrox Security</h2>
+      <p class="spotlight-desc">
+        Building memory-safe, autonomous AI SOC infrastructure. We build agents that investigate threats deterministically.
+      </p>
+      <div class="spotlight-traction">
+        <div class="traction-metric">
+          <span class="i-uil:arrow-right" aria-hidden="true"></span>
+          <span class="traction-text"><strong>0-to-1:</strong> Day 1 core foundation shipped.</span>
+        </div>
+        <div class="traction-metric">
+          <span class="i-uil:arrow-right" aria-hidden="true"></span>
+          <span class="traction-text"><strong>Status:</strong> Onboarding early pilots.</span>
+        </div>
+      </div>
+      <div class="spotlight-action-row">
+        <a class="cta cta-primary" href="https://vyrox.dev">Try Vyrox</a>
+      </div>
+    </section>
+
     <section class="contrib contrib--mid" aria-label="GitHub contributions">
       <h2 class="contrib__title">Contributions</h2>
       <div class="contrib__graph-wrap">
@@ -159,35 +172,6 @@ const roles = ["Systems Engineer", "Rust Backend Engineer", "Solana Protocol Eng
       font-size: 1rem;
     }
 
-    .role-ticker {
-      height: 1.5rem;
-      overflow: hidden;
-      margin: 0.1rem 0 0.55rem;
-    }
-
-    .role-ticker__track {
-      display: flex;
-      flex-direction: column;
-      animation: role-slide 6s ease-in-out infinite;
-      will-change: transform;
-    }
-
-    .role-ticker__item {
-      height: 1.5rem;
-      display: flex;
-      align-items: center;
-      color: #a89984;
-      font-size: 0.98rem;
-      letter-spacing: 0.01em;
-    }
-
-    @keyframes role-slide {
-      0%, 26% { transform: translateY(0); }
-      33%, 59% { transform: translateY(-1.5rem); }
-      66%, 92% { transform: translateY(-3rem); }
-      100% { transform: translateY(-4.5rem); }
-    }
-
     .landing__lede {
       margin: 0 0 1.2rem 0;
       color: #bdae93;
@@ -246,6 +230,63 @@ const roles = ["Systems Engineer", "Rust Backend Engineer", "Solana Protocol Eng
     .current-mode-inline {
       margin: 0.2rem 0 0.45rem;
       max-width: 48ch;
+    }
+
+    .vyrox-spotlight {
+      max-width: 760px;
+      margin: 2.5rem auto;
+      padding: 1rem 1.1rem;
+      background: transparent;
+      border: none;
+      text-align: left;
+    }
+
+    .vyrox-spotlight .meta-label {
+      margin-bottom: 0.5rem;
+    }
+
+    .spotlight-title {
+      margin: 0 0 0.8rem 0;
+      font-size: 2rem;
+      color: #ebdbb2;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .spotlight-desc {
+      color: #bdae93;
+      margin-bottom: 1.2rem;
+      line-height: 1.55;
+      font-size: 1.05rem;
+      max-width: 65ch;
+    }
+
+    .spotlight-traction {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 1.5rem;
+      color: #d5c4a1;
+    }
+
+    .traction-metric {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.4rem;
+    }
+
+    .traction-metric .i-uil\:arrow-right {
+      color: #a89984;
+      margin-top: 0.2rem;
+      font-size: 1rem;
+    }
+
+    .traction-text {
+      line-height: 1.5;
+    }
+    
+    .spotlight-action-row {
+      margin-top: 0.5rem;
     }
 
     .contrib {

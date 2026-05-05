@@ -24,14 +24,20 @@ export const Navbar: Component<{
       {/* Center: Nav Links */}
       <nav class="flex items-center gap-x-2 mx-1 text-sm font-medium">
         <a
-          class={`nav-btn${props.activePage === "projects" ? " nav-btn-active" : ""}`}
-          href="/projects"
+          class={`nav-btn${props.activePage === "vyrox" ? " nav-btn-active" : ""}`}
+          href="https://vyrox.dev"
+        >
+          Vyrox
+        </a>
+        <a
+          class={`nav-btn${props.activePage === "builds" ? " nav-btn-active" : ""}`}
+          href="/builds"
         >
           Builds
         </a>
         <a
-          class={`nav-btn${props.activePage === "posts" ? " nav-btn-active" : ""}`}
-          href="/posts"
+          class={`nav-btn${props.activePage === "articles" ? " nav-btn-active" : ""}`}
+          href="/articles"
         >
           Articles
         </a>

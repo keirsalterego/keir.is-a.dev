@@ -1,11 +1,11 @@
 ---
 import { SITE } from "@config";
-import { getPosts, getPostDate, formatDate } from "@utils";
+import { getarticles, getPostDate, formatDate } from "@utils";
 import Layout from "@layouts/Layout.astro";
 import SearchComponent from "@components/Search";
 
-const posts = await getPosts();
-const searchList = posts.map(({ id, body, data }) => ({
+const articles = await getarticles();
+const searchList = articles.map(({ id, body, data }) => ({
   id,
   title: data.title,
   date: formatDate(getPostDate(id), 2),

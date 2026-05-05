@@ -9,8 +9,8 @@ const { front, back = front, alt = "" } = Astro.props;
 ---
 
 <div class="group relative size-full perspective-600">
-  <img class="no-zoom group-hover:rotate-y-180" src={front} alt={alt} />
-  <img class="no-zoom -rotate-y-180 group-hover:rotate-y-0" src={back} alt={alt} />
+  <img class="no-zoom group-hover:rotate-y-180" src={front} alt={alt} loading="eager" decoding="async" />
+  <img class="no-zoom -rotate-y-180 group-hover:rotate-y-0" src={back} alt={alt} loading="lazy" decoding="async" />
 </div>
 
 <style scoped>

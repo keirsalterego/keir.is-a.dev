@@ -1,8 +1,8 @@
 export const SITE = {
-  website: "https://mxnish.me/",
-  title: "Manish Kumar Jha",
-  desc: "B.Tech student at Silicon University",
-  author: "Manish Kumar Jha"
+  website: "https://keir.is-a.dev/",
+  title: "Keir",
+  desc: "Rust Systems Engineer & Founder @ Vyrox Security",
+  author: "Keir"
 };
 
 export const THEME = {

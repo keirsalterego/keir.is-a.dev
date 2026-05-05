@@ -264,7 +264,7 @@ This code demonstrates critical security vulnerabilities that have led to real-w
    - **Impact**: Predictable patterns make it easier for attackers to identify and extract tokens from logs, memory dumps, or network traffic.
 
 3. **User ID Exposure**
-   - **Real-World Example**: In 2019, a vulnerability in a popular social media app allowed attackers to link anonymous posts to real user accounts by decoding the first part of access tokens.
+   - **Real-World Example**: In 2019, a vulnerability in a popular social media app allowed attackers to link anonymous articles to real user accounts by decoding the first part of access tokens.
    - **Technical Insight**: The `extract_user_id_from_token` function shows how the first segment of a JWT (JSON Web Token) often contains the user ID in base64-encoded format. This can be decoded to identify the account owner.
    - **Impact**: Even if the full token isn't compromised, exposing user IDs can lead to privacy violations and targeted attacks.
 
@@ -298,7 +298,7 @@ This code demonstrates critical security vulnerabilities that have led to real-w
 
 3. **Input Sanitization**
    - **Implementation**: Validate and sanitize all user inputs, especially those used in database queries or file operations.
-   - **Example**: A forum platform should sanitize user posts to prevent XSS attacks that could steal tokens from other users' browsers.
+   - **Example**: A forum platform should sanitize user articles to prevent XSS attacks that could steal tokens from other users' browsers.
 
 ### For End Users
 

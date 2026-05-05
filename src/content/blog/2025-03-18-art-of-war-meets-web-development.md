@@ -22,16 +22,16 @@ In web development, this translates to:
 ```javascript
 // Before: Generic optimization approach
 export const getStaticPaths = async () => {
-  const posts = await getAllPosts();
-  return posts;
+  const articles = await getAllarticles();
+  return articles;
 };
 
 // After: Knowing the system deeply
 export const getStaticPaths = async () => {
-  const posts = await getAllPosts();
+  const articles = await getAllarticles();
   // Leverage Astro's build cache intelligently
   return {
-    paths: posts.map(post => ({ params: { slug: post.slug } })),
+    paths: articles.map(post => ({ params: { slug: post.slug } })),
     fallback: false,
   };
 };

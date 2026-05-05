@@ -1,7 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import Post from "@layouts/Post.astro";
-import { getPosts } from "@utils";
+import { getarticles } from "@utils";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -10,7 +10,7 @@ export interface Props {
 const { post } = Astro.props;
 
 export const getStaticPaths = async () =>
-  (await getPosts()).map((post) => ({
+  (await getarticles()).map((post) => ({
     params: { id: post.id },
     props: { post }
   }));
