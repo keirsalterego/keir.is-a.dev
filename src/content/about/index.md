@@ -3,7 +3,7 @@ name: Keir.
 subname: keirsalterego
 avatarFront: /img/me.jpg
 avatarBack: /img/avatar.jpg
-tltr: "Rust Systems Engineer & Founder @ Vyrox Security | Building autonomous AI SOC analysts and low-level infrastructure."
+tltr: "Founder @ Vyrox Security | Building memory-safe, autonomous AI SOC infrastructure."
 socials:
   - icon: i-academicons:cv
     link: /files/cv/cv.pdf
@@ -24,9 +24,9 @@ I build the infrastructure that others build on: low-level systems, Rust securit
 
 I am the Founder of **Vyrox Security**, where we are building memory-safe, autonomous AI SOC infrastructure to investigate threats deterministically.
 
-I work closest to the machine layer where correctness, performance, and reliability are non-negotiable. Most of my focus is on systems engineering problems like runtime behavior, system performance paths, and protocol-grade architecture decisions.
+I work closest to the machine layer where correctness, performance, and reliability are non-negotiable. Most of my focus is on runtime behavior, system performance paths, and protocol-grade architecture decisions.
 
-Current focus: **Vyrox Security**, **Systems Engineering**, and **Rust Security Engineering**.
+Current focus: **Vyrox Security** and **Rust Infrastructure**.
 
 Check out my [builds](/builds) and [journal](/journal) for Vyrox build logs, experiments, and infra notes.
 

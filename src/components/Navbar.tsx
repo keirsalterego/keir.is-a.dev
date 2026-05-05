@@ -1,5 +1,6 @@
 import { Show, type Component } from "solid-js";
 import ToggleToc from "@components/ToggleToc";
+import ToggleDark from "@components/ToggleDark";
 
 export const Navbar: Component<{
   activePage?: string;
@@ -61,6 +62,7 @@ export const Navbar: Component<{
         <Show when={props.hasToc}>
           <ToggleToc />
         </Show>
+        <ToggleDark />
       </div>
 
       <style>{`
