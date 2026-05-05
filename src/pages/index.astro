@@ -57,16 +57,16 @@ const { name, subname, avatarFront, avatarBack, tltr, socials } =
         <div class="meta-card">
           <p class="meta-label">Where to dive in</p>
           <ul class="meta-list">
-            <li><span class="i-uil:arrow-right" aria-hidden="true" /> Latest build logs in /journal</li>
-            <li><span class="i-uil:arrow-right" aria-hidden="true" /> Long-form notes in /articles</li>
-            <li><span class="i-uil:arrow-right" aria-hidden="true" /> Active experiments in /builds</li>
+            <li><span class="i-uil:arrow-right" aria-hidden="true" /> Latest build logs in <a href="/journal" class="text-[#83a598] hover:text-[#fbf1c7] transition-colors underline decoration-[#83a598]/30 underline-offset-4">/journal</a></li>
+            <li><span class="i-uil:arrow-right" aria-hidden="true" /> Long-form notes in <a href="/articles" class="text-[#83a598] hover:text-[#fbf1c7] transition-colors underline decoration-[#83a598]/30 underline-offset-4">/articles</a></li>
+            <li><span class="i-uil:arrow-right" aria-hidden="true" /> Active experiments in <a href="/builds" class="text-[#83a598] hover:text-[#fbf1c7] transition-colors underline decoration-[#83a598]/30 underline-offset-4">/builds</a></li>
           </ul>
         </div>
 
         <div class="meta-card">
           <p class="meta-label">Current reading</p>
           <ul class="meta-list">
-            <li><span class="i-uil:arrow-right" aria-hidden="true" /> The Sovereign Individual - James Dale Davidson & William Rees-Mogg</li>
+            <li><span class="i-uil:arrow-right" aria-hidden="true" /> Black Hat Rust - Sylvain Kerkour</li>
           </ul>
         </div>
       </div>
@@ -74,24 +74,30 @@ const { name, subname, avatarFront, avatarBack, tltr, socials } =
   </section>
 
   <section class="about-body">
-    <section class="vyrox-spotlight" aria-label="Vyrox Security Spotlight">
-      <p class="meta-label">Currently building</p>
-      <h2 class="spotlight-title">Vyrox Security</h2>
-      <p class="spotlight-desc">
-        Building memory-safe, autonomous AI SOC infrastructure. We build agents that investigate threats deterministically.
-      </p>
-      <div class="spotlight-traction">
-        <div class="traction-metric">
-          <span class="i-uil:arrow-right" aria-hidden="true"></span>
-          <span class="traction-text"><strong>0-to-1:</strong> Day 1 core foundation shipped.</span>
+    <section class="vyrox-spotlight relative overflow-hidden" aria-label="Vyrox Security Spotlight">
+      <div class="spotlight-content relative z-10">
+        <div class="spotlight-header">
+          <span class="i-ph:terminal-window-duotone text-[#83a598] text-lg mb-0.5 animate-pulse"></span>
+          <p class="meta-label spotlight-label">Currently Building</p>
         </div>
-        <div class="traction-metric">
-          <span class="i-uil:arrow-right" aria-hidden="true"></span>
-          <span class="traction-text"><strong>Status:</strong> Onboarding early pilots.</span>
+        
+        <h2 class="spotlight-title">Vyrox Security</h2>
+        
+        <p class="spotlight-desc">
+          Memory-safe, autonomous AI SOC infrastructure. We build agents that investigate threats <span class="spotlight-highlight">deterministically</span>.
+        </p>
+        
+
+        
+        <div class="spotlight-actions">
+          <a class="cta cta-primary spotlight-cta" href="https://vyrox.dev">
+            Access the Platform
+            <span class="i-ph:arrow-right-bold"></span>
+          </a>
+          <a class="cta cta-ghost spotlight-ghost" href="mailto:keirsalterego@gmail.com">
+            Request Pilot
+          </a>
         </div>
-      </div>
-      <div class="spotlight-action-row">
-        <a class="cta cta-primary" href="https://vyrox.dev">Try Vyrox</a>
       </div>
     </section>
 
@@ -239,54 +245,101 @@ const { name, subname, avatarFront, avatarBack, tltr, socials } =
       background: transparent;
       border: none;
       text-align: left;
+      position: relative;
+    }
+    
+
+
+    .spotlight-header {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 0.8rem;
     }
 
-    .vyrox-spotlight .meta-label {
-      margin-bottom: 0.5rem;
+    .spotlight-label {
+      margin: 0 !important;
+      color: #bdae93;
     }
 
     .spotlight-title {
-      margin: 0 0 0.8rem 0;
-      font-size: 2rem;
-      color: #ebdbb2;
+      margin: 0 0 1rem 0;
+      font-size: 2.2rem;
+      color: #fbf1c7;
       font-weight: 700;
-      letter-spacing: 0.01em;
-    }
-
-    .spotlight-desc {
-      color: #bdae93;
-      margin-bottom: 1.2rem;
-      line-height: 1.55;
-      font-size: 1.05rem;
-      max-width: 65ch;
-    }
-
-    .spotlight-traction {
+      letter-spacing: -0.02em;
       display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-      margin-bottom: 1.5rem;
-      color: #d5c4a1;
-    }
-
-    .traction-metric {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.4rem;
-    }
-
-    .traction-metric .i-uil\:arrow-right {
-      color: #a89984;
-      margin-top: 0.2rem;
-      font-size: 1rem;
-    }
-
-    .traction-text {
-      line-height: 1.5;
+      align-items: center;
+      gap: 0.5rem;
     }
     
-    .spotlight-action-row {
-      margin-top: 0.5rem;
+
+    .spotlight-desc {
+      color: #ebdbb2;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+      font-size: 1.1rem;
+      max-width: 65ch;
+    }
+    
+    .spotlight-highlight {
+      color: #83a598;
+      font-weight: 600;
+    }
+    
+    .spotlight-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .spotlight-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.34rem 0.68rem;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      transition: color 140ms ease, border-color 140ms ease, background 140ms ease;
+      background: #272727;
+      color: #ebdbb2;
+    }
+    
+    .spotlight-cta:hover {
+      background: #2d2d2d;
+      border-color: rgba(255, 255, 255, 0.16);
+      color: #fbf1c7;
+    }
+    
+    .spotlight-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.34rem 0.68rem;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      transition: color 140ms ease, border-color 140ms ease, background 140ms ease;
+      color: #d5c4a1;
+      background: #232323;
+    }
+    
+    .spotlight-ghost:hover {
+      background: #292929;
+      border-color: rgba(255, 255, 255, 0.14);
+      color: #fbf1c7;
+    }
+    
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(184, 187, 38, 0.4); }
+      70% { box-shadow: 0 0 0 6px rgba(184, 187, 38, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(184, 187, 38, 0); }
     }
 
     .contrib {
