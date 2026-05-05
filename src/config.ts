@@ -15,10 +15,10 @@ export const THEME = {
 };
 
 export const GISCUS = {
-  repo: "keirsalterego/mxnish-me",
-  repoId: "R_kgDOJqXxXw",
-  category: "Comments",
-  categoryId: "DIC_kwDOJqXxX84CXqXx",
+  repo: "keirsalterego/keir.is-a.dev",
+  repoId: "R_kgDOOz5POw",
+  category: "General",
+  categoryId: "DIC_kwDOOz5PO84CtCWT",
   light: "light",
   dark: "dark"
 };
