@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import unocss from "unocss/astro";
 import solid from "@astrojs/solid-js";
 import sitemap from "@astrojs/sitemap";
+import vercel from "@astrojs/vercel";
 import { remarkPlugins, rehypePlugins } from "./plugins";
 
 // https://astro.build/config
@@ -12,5 +13,7 @@ export default defineConfig({
     remarkPlugins,
     rehypePlugins,
     syntaxHighlight: false
-  }
+  },
+  output: "static",
+  adapter: vercel()
 });

@@ -1,0 +1,70 @@
+---
+export const prerender = false;
+
+import Layout from "@layouts/Layout.astro";
+import AdminDashboard from "@components/AdminDashboard";
+
+const token = Astro.cookies.get("vyrox_admin_token")?.value;
+const isLoggedIn = !!token;
+---
+
+<Layout title="Vyrox CMS" activePage="admin">
+  <main class="admin-shell">
+    {!isLoggedIn ? (
+      <div class="login-container">
+        <h1>Vyrox CMS</h1>
+        <p class="subtitle">Secure Memory-Safe Administrative Zone</p>
+        <a href="/api/auth/github" class="login-btn">
+          <span class="i-eva:github-outline"></span>
+          Authenticate via GitHub
+        </a>
+      </div>
+    ) : (
+      <AdminDashboard client:only="solid" />
+    )}
+  </main>
+</Layout>
+
+<style>
+  .admin-shell {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    min-height: 80vh;
+  }
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #fbf1c7;
+  }
+  .subtitle {
+    color: #bdae93;
+    margin-bottom: 2rem;
+  }
+  .login-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    background: #282828;
+    color: #ebdbb2;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.2s;
+  }
+  .login-btn:hover {
+    background: #3c3836;
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+</style>
